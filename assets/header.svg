@@ -1,192 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320" role="img" aria-label="Khadija Mousaid - AI, ML, DL, Data, Software, Data Engineering">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1117"/>
+      <stop offset="0.6" stop-color="#0b1d2b"/>
+      <stop offset="1" stop-color="#0a2a22"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00C8FF"/>
+      <stop offset="1" stop-color="#39FF14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#00C8FF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#00C8FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#39FF14" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#39FF14" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      text { font-family: 'Fira Code', 'SFMono-Regular', Consolas, monospace; }
+      .eyebrow { fill:#6e7f91; font-size:14px; letter-spacing:3px; }
+      .name { font-size:46px; font-weight:700; fill:url(#title); }
+      .line { fill:#c9d6e2; font-size:17px; opacity:0; animation: appear 0.6s ease forwards; }
+      .l1 { animation-delay:0.4s } .l2 { animation-delay:1.2s } .l3 { animation-delay:2s }
+      .cursor { fill:#39FF14; animation: blink 1s steps(2) infinite; }
+      @keyframes appear { to { opacity:1 } }
+      @keyframes blink { 50% { opacity:0 } }
 
-<svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 1100 360"
-     width="1100" height="360"
-     role="img">
+      .edge { stroke:#00C8FF; stroke-width:1; fill:none; opacity:.35; stroke-dasharray:4 7; animation: flow 1.6s linear infinite; }
+      @keyframes flow { to { stroke-dashoffset:-22 } }
+      .node { fill:#0D1117; stroke:#00C8FF; stroke-width:2; animation: pulse 2.4s ease-in-out infinite; }
+      .out  { stroke:#39FF14; animation-name: pulseG; }
+      @keyframes pulse  { 0%,100% { fill:#0D1117 } 50% { fill:#00C8FF } }
+      @keyframes pulseG { 0%,100% { fill:#0D1117 } 50% { fill:#39FF14 } }
 
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#0D1117"/>
-    <stop offset=".55" stop-color="#10202D"/>
-    <stop offset="1" stop-color="#071B19"/>
-  </linearGradient>
+      .chip { fill:#0D1117; stroke:#00C8FF; stroke-width:1.5; animation: chip 3.6s ease-in-out infinite; }
+      .chipG { stroke:#39FF14; }
+      .chipT { fill:#c9d6e2; font-size:13px; font-weight:600; text-anchor:middle; }
+      @keyframes chip { 0%,100% { opacity:.55 } 50% { opacity:1 } }
+      .lab { fill:#6e7f91; font-size:10px; letter-spacing:2px; text-anchor:middle; }
+      .float { animation: floaty 4s ease-in-out infinite; }
+      @keyframes floaty { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-5px) } }
+    </style>
+  </defs>
 
-  <linearGradient id="title">
-    <stop offset="0" stop-color="#00C8FF"/>
-    <stop offset="1" stop-color="#39FF14"/>
-  </linearGradient>
+  <rect width="1000" height="320" rx="18" fill="url(#bg)"/>
+  <circle cx="730" cy="165" r="190" fill="url(#glow)"/>
+  <circle cx="840" cy="170" r="110" fill="url(#glowG)"/>
 
-  <radialGradient id="glow">
-    <stop offset="0" stop-color="#00C8FF" stop-opacity=".22"/>
-    <stop offset="1" stop-color="#00C8FF" stop-opacity="0"/>
-  </radialGradient>
+  <!-- title block -->
+  <text class="eyebrow" x="50" y="70">AI · ML · DL · DATA · SOFTWARE</text>
+  <text class="name" x="48" y="127">Khadija Mousaid</text>
+  <text class="line l1" x="50" y="170">&gt; I teach machines to learn from data...</text>
+  <text class="line l2" x="50" y="200">&gt; ...and turn data into real-world impact.</text>
+  <text class="line l3" x="50" y="230">&gt; engineering student @ FST Mohammedia <tspan class="cursor">█</tspan></text>
 
-  <style>
-    text {font-family:monospace}
-    .eyebrow {fill:#8B949E;font-size:13px;letter-spacing:4px}
-    .name {font-size:45px;font-weight:bold;fill:url(#title)}
-    .subtitle {fill:#C9D6E2;font-size:16px}
-    .small {fill:#8B949E;font-size:11px;letter-spacing:2px}
-    .cursor {fill:#39FF14;animation:blink 1s steps(2) infinite}
-    @keyframes blink {50%{opacity:0}}
+  <!-- tech chips -->
+  <g>
+    <g class="chip" style="animation-delay:0s"><rect class="chip" x="50" y="256" width="46" height="26" rx="13"/></g>
+    <text class="chipT" x="73" y="274">AI</text>
+    <rect class="chip chipG" x="104" y="256" width="46" height="26" rx="13" style="animation-delay:.4s"/>
+    <text class="chipT" x="127" y="274">ML</text>
+    <rect class="chip" x="158" y="256" width="46" height="26" rx="13" style="animation-delay:.8s"/>
+    <text class="chipT" x="181" y="274">DL</text>
+    <rect class="chip chipG" x="212" y="256" width="64" height="26" rx="13" style="animation-delay:1.2s"/>
+    <text class="chipT" x="244" y="274">DATA</text>
+    <rect class="chip" x="284" y="256" width="104" height="26" rx="13" style="animation-delay:1.6s"/>
+    <text class="chipT" x="336" y="274">SOFTWARE</text>
+    <rect class="chip chipG" x="396" y="256" width="124" height="26" rx="13" style="animation-delay:2s"/>
+    <text class="chipT" x="458" y="274">DATA ENG.</text>
+  </g>
 
-    .edge {
-      stroke:#00C8FF;
-      stroke-width:1.3;
-      stroke-dasharray:5 7;
-      opacity:.5;
-      animation:flow 3s linear infinite;
-    }
-    @keyframes flow {to{stroke-dashoffset:-48}}
+  <!-- neural network -->
+  <g class="float">
+    <g class="edge">
+      <!-- layer 1 -> 2 -->
+      <path d="M620 70L730 70M620 70L730 135M620 70L730 200M620 70L730 265
+               M620 135L730 70M620 135L730 135M620 135L730 200M620 135L730 265
+               M620 200L730 70M620 200L730 135M620 200L730 200M620 200L730 265
+               M620 265L730 70M620 265L730 135M620 265L730 200M620 265L730 265"/>
+      <!-- layer 2 -> 3 -->
+      <path d="M730 70L840 100M730 70L840 170M730 70L840 240
+               M730 135L840 100M730 135L840 170M730 135L840 240
+               M730 200L840 100M730 200L840 170M730 200L840 240
+               M730 265L840 100M730 265L840 170M730 265L840 240"/>
+    </g>
 
-    .node {
-      fill:#0D1117;
-      stroke:#00C8FF;
-      stroke-width:2;
-      animation:pulse 2.5s ease-in-out infinite;
-    }
-    @keyframes pulse {
-      50% {fill:#00C8FF;filter:drop-shadow(0 0 5px #00C8FF)}
-    }
+    <circle class="node" cx="620" cy="70"  r="8" style="animation-delay:0s"/>
+    <circle class="node" cx="620" cy="135" r="8" style="animation-delay:.3s"/>
+    <circle class="node" cx="620" cy="200" r="8" style="animation-delay:.6s"/>
+    <circle class="node" cx="620" cy="265" r="8" style="animation-delay:.9s"/>
+    <circle class="node" cx="730" cy="70"  r="8" style="animation-delay:.4s"/>
+    <circle class="node" cx="730" cy="135" r="8" style="animation-delay:.7s"/>
+    <circle class="node" cx="730" cy="200" r="8" style="animation-delay:1s"/>
+    <circle class="node" cx="730" cy="265" r="8" style="animation-delay:1.3s"/>
+    <circle class="node out" cx="840" cy="100" r="9" style="animation-delay:.8s"/>
+    <circle class="node out" cx="840" cy="170" r="9" style="animation-delay:1.1s"/>
+    <circle class="node out" cx="840" cy="240" r="9" style="animation-delay:1.4s"/>
 
-    .green {stroke:#39FF14;animation-name:pulseGreen}
-    @keyframes pulseGreen {
-      50% {fill:#39FF14;filter:drop-shadow(0 0 5px #39FF14)}
-    }
+    <!-- data packets travelling through the network -->
+    <circle r="4" fill="#00C8FF">
+      <animateMotion dur="3s" repeatCount="indefinite" path="M620 70 L730 135 L840 170"/>
+    </circle>
+    <circle r="4" fill="#39FF14">
+      <animateMotion dur="3s" begin="1s" repeatCount="indefinite" path="M620 265 L730 200 L840 100"/>
+    </circle>
+    <circle r="4" fill="#00C8FF">
+      <animateMotion dur="3s" begin="2s" repeatCount="indefinite" path="M620 135 L730 265 L840 240"/>
+    </circle>
+  </g>
 
-    .particle {
-      fill:#39FF14;
-      animation:float 4s linear infinite;
-    }
-    @keyframes float {
-      0% {transform:translate(0,0);opacity:0}
-      20% {opacity:1}
-      80% {opacity:1}
-      100% {transform:translate(35px,-45px);opacity:0}
-    }
-
-    .stem {
-      fill:none;
-      stroke:#39FF14;
-      stroke-width:3.5;
-      stroke-linecap:round;
-      stroke-dasharray:180;
-      stroke-dashoffset:180;
-      animation:grow 8s ease-in-out infinite;
-    }
-    @keyframes grow {
-      0%,10% {stroke-dashoffset:180}
-      45%,80% {stroke-dashoffset:0}
-      100% {stroke-dashoffset:0}
-    }
-
-    .leaf {
-      fill:#39FF14;
-      transform-box:fill-box;
-      transform-origin:center;
-      animation:leafGrow 8s ease-in-out infinite;
-    }
-    @keyframes leafGrow {
-      0%,30% {transform:scale(0)}
-      50%,80% {transform:scale(1)}
-      100% {transform:scale(0)}
-    }
-
-    .tag {fill:#101C27;stroke:#00C8FF;stroke-width:1}
-    .tagText {fill:#00C8FF;font-size:11px;font-weight:bold}
-  </style>
-</defs>
-
-<rect width="1100" height="360" rx="20" fill="url(#bg)"/>
-<circle cx="800" cy="170" r="220" fill="url(#glow)"/>
-
-<g stroke="#00C8FF" opacity=".07">
-  <path d="M0 70H1100 M0 140H1100 M0 210H1100 M0 280H1100"/>
-  <path d="M100 0V360 M200 0V360 M300 0V360 M400 0V360 M500 0V360"/>
-</g>
-
-<text class="eyebrow" x="55" y="75">
-  ARTIFICIAL INTELLIGENCE · DATA SCIENCE
-</text>
-
-<text class="name" x="52" y="137">Khadija Mousaid</text>
-
-<text class="subtitle" x="55" y="180">
-  Engineering Student · IDSI @ FST Mohammedia
-</text>
-
-<text class="subtitle" x="55" y="217">
-  &gt; Turning data into intelligence
-  <tspan class="cursor">█</tspan>
-</text>
-
-<g transform="translate(55 255)">
-  <rect class="tag" width="75" height="29" rx="7"/>
-  <text class="tagText" x="37" y="19" text-anchor="middle">AI</text>
-
-  <rect class="tag" x="87" width="75" height="29" rx="7"/>
-  <text class="tagText" x="124" y="19" text-anchor="middle">ML</text>
-
-  <rect class="tag" x="174" width="75" height="29" rx="7"/>
-  <text class="tagText" x="211" y="19" text-anchor="middle">DL</text>
-
-  <rect class="tag" x="261" width="90" height="29" rx="7"/>
-  <text class="tagText" x="306" y="19" text-anchor="middle">DATA</text>
-</g>
-
-<text class="small" x="55" y="325">
-  SENSE · THINK · BUILD · GROW
-</text>
-
-<g class="edge" fill="none">
-  <path d="M570 95L650 65L730 105"/>
-  <path d="M570 95L650 145L730 105"/>
-  <path d="M570 165L650 65L730 185"/>
-  <path d="M570 165L650 145L730 185"/>
-  <path d="M570 235L650 145L730 265"/>
-  <path d="M570 235L650 225L730 265"/>
-  <path d="M650 65L730 105L800 165"/>
-  <path d="M650 145L730 185L800 165"/>
-  <path d="M650 225L730 265L800 165"/>
-</g>
-
-<g>
-  <circle class="node" cx="570" cy="95" r="8"/>
-  <circle class="node" cx="570" cy="165" r="8"/>
-  <circle class="node" cx="570" cy="235" r="8"/>
-
-  <circle class="node" cx="650" cy="65" r="8"/>
-  <circle class="node" cx="650" cy="145" r="8"/>
-  <circle class="node" cx="650" cy="225" r="8"/>
-
-  <circle class="node green" cx="730" cy="105" r="9"/>
-  <circle class="node green" cx="730" cy="185" r="9"/>
-  <circle class="node green" cx="730" cy="265" r="9"/>
-  <circle class="node green" cx="800" cy="165" r="11"/>
-</g>
-
-<circle class="particle" cx="570" cy="95" r="3"/>
-<circle class="particle" cx="650" cy="145" r="3" style="animation-delay:1s"/>
-<circle class="particle" cx="730" cy="185" r="3" style="animation-delay:2s"/>
-
-<line x1="900" y1="300" x2="1060" y2="300"
-      stroke="#263B43" stroke-width="3"/>
-
-<path class="stem" d="M980 300C980 250 960 210 985 145"/>
-
-<ellipse class="leaf" cx="955" cy="240" rx="24" ry="10"
-         transform="rotate(-30 955 240)"/>
-
-<ellipse class="leaf" cx="1010" cy="210" rx="25" ry="11"
-         transform="rotate(30 1010 210)"
-         style="animation-delay:.5s"/>
-
-<ellipse class="leaf" cx="966" cy="175" rx="22" ry="10"
-         transform="rotate(-35 966 175)"
-         style="animation-delay:1s"/>
-
-<ellipse class="leaf" cx="1000" cy="145" rx="20" ry="9"
-         transform="rotate(60 1000 145)"
-         style="animation-delay:1.5s"/>
-
+  <text class="lab" x="620" y="305">INPUT</text>
+  <text class="lab" x="730" y="305">HIDDEN</text>
+  <text class="lab" x="840" y="305">OUTPUT</text>
 </svg>
