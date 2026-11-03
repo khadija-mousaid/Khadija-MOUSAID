@@ -51,10 +51,10 @@ My goal is to build applications that can **learn, analyze, optimize and make in
 
 ```mermaid
 flowchart LR
-    A["📡 SENSE<br/>Data·Sensors·Images"]
-    B["🧠 LEARN<br/>AI·ML·DL"]
-    C["⚙️ DECIDE<br/>Algorithms·Optimization"]
-    D["🚀 ACT<br/>Software·Automation"]
+    A["📡 SENSE<br/>Data·Sensors·Images "]
+    B["🧠 LEARN<br/>AI·ML·DL "]
+    C["⚙️ DECIDE<br/>Algorithms·Optimization "]
+    D["🚀 ACT<br/>Software·Automation "]
 
     A --> B --> C --> D
     D -. Feedback .-> A
