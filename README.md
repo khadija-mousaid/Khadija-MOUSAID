@@ -51,10 +51,10 @@ My goal is to build applications that can **learn, analyze, optimize and make in
 
 ```mermaid
 flowchart LR
-    A["📡 SENSE<br/>Data · Sensors · Images"]
-    B["🧠 LEARN<br/>AI · ML · DL"]
-    C["⚙️ DECIDE<br/>Algorithms · Optimization"]
-    D["🚀 ACT<br/>Software · Automation"]
+    A["📡 SENSE<br/>Data·Sensors·Images"]
+    B["🧠 LEARN<br/>AI·ML·DL"]
+    C["⚙️ DECIDE<br/>Algorithms·Optimization"]
+    D["🚀 ACT<br/>Software·Automation"]
 
     A --> B --> C --> D
     D -. Feedback .-> A
@@ -120,6 +120,55 @@ flowchart LR
 ## 🧪 `04` — EXPERIMENT LAB
 
 <details>
+<summary><b>📦 EXP-03 — SmartLogi (loading...) </b> | Intelligent Logistics Optimization</summary>
+
+<br/>
+
+**Mission:** Optimize order fulfillment using multiple warehouses.
+
+- PostgreSQL relational database.
+- Multi-warehouse stock allocation.
+- Multi-criteria optimization.
+- Logistics planning and route considerations.
+
+`Python` `PostgreSQL` `Algorithms` `Optimization`
+
+</details>
+
+<details>
+<summary><b>🔬 EXP-04 — ScientificLab</b> | Full-Stack Development</summary>
+
+<br/>
+
+**Mission:** Build a collaborative laboratory management application.
+
+- Backend and database architecture.
+- Web interface development.
+- Collaborative software engineering.
+
+`Java` `React` `MySQL`
+
+</details>
+
+
+
+<details>
+<summary><b>🚗 EXP-05 — Intelligent Parking System</b> | Java & OOP</summary>
+
+<br/>
+
+**Mission:** Organize parking operations through object-oriented programming.
+
+- Object-oriented design.
+- HashMap and data structures.
+- Custom exception handling.
+
+`Java` `OOP` `HashMap`
+
+</details>
+
+
+<details>
 <summary><b>🌱 EXP-01 — AI Plant Disease Detection</b> | Deep Learning & Computer Vision</summary>
 
 <br/>
@@ -151,51 +200,8 @@ flowchart LR
 
 </details>
 
-<details>
-<summary><b>📦 EXP-03 — SmartLogi</b> | Intelligent Logistics Optimization</summary>
 
-<br/>
 
-**Mission:** Optimize order fulfillment using multiple warehouses.
-
-- PostgreSQL relational database.
-- Multi-warehouse stock allocation.
-- Multi-criteria optimization.
-- Logistics planning and route considerations.
-
-`Python` `PostgreSQL` `Algorithms` `Optimization`
-
-</details>
-
-<details>
-<summary><b>🔬 EXP-04 — ScientificLab</b> | Full-Stack Development</summary>
-
-<br/>
-
-**Mission:** Build a collaborative laboratory management application.
-
-- Backend and database architecture.
-- Web interface development.
-- Collaborative software engineering.
-
-`Java` `React` `MySQL`
-
-</details>
-
-<details>
-<summary><b>🚗 EXP-05 — Intelligent Parking System</b> | Java & OOP</summary>
-
-<br/>
-
-**Mission:** Organize parking operations through object-oriented programming.
-
-- Object-oriented design.
-- HashMap and data structures.
-- Custom exception handling.
-
-`Java` `OOP` `HashMap`
-
-</details>
 
 ---
 
