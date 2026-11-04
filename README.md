@@ -249,13 +249,13 @@ mindmap
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=KhadijaMousaid&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00C8FF&icon_color=39FF14&text_color=FFFFFF&rank_icon=github"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=KhadijaMousaid&show_icons=true&hide_border=true&bg_color=4a5053&title_color=00C8FF&icon_color=39FF14&text_color=FFFFFF&rank_icon=github"/>
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KhadijaMousaid&layout=compact&hide_border=true&bg_color=0D1117&title_color=00C8FF&text_color=FFFFFF"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KhadijaMousaid&layout=compact&hide_border=true&bg_color=4a5053&title_color=00C8FF&text_color=FFFFFF"/>
 
 <br/><br/>
 
-<img width="90%" src="https://github-readme-streak-stats.herokuapp.com/?user=KhadijaMousaid&hide_border=true&background=0D1117&ring=00C8FF&fire=39FF14&currStreakLabel=00C8FF&sideLabels=FFFFFF&dates=8B949E"/>
+<img width="90%" src="https://github-readme-streak-stats.herokuapp.com/?user=KhadijaMousaid&hide_border=true&background=4a5053&ring=00C8FF&fire=39FF14&currStreakLabel=00C8FF&sideLabels=FFFFFF&dates=8B949E"/>
 
 </div>
 
